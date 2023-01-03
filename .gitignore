@@ -1,0 +1,9 @@
+# Hide dependencies
+node_modules
+
+# Hide videos and screenshots for Cypress
+cypress/videos
+cypress/screenshots
+
+# Hide environment settings
+.env
