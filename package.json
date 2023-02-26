@@ -1,7 +1,26 @@
 {
   "dependencies": {
-    "cypress": "^12.2.0",
+    "cypress": "^12.7.0",
     "cypress-testrail-integration": "^1.0.0",
     "dotenv": "^16.0.3"
-  }
+  },
+  "name": "cypress-testrail-integration-example",
+  "description": "1. Clone this project: \r   + `https://github.com/Smoliarick/cypress-testrail-integration-example.git` for HTTPS\r   + `git@github.com:Smoliarick/cypress-testrail-integration-example.git` for SSH\r 2. Run `npm install` command\r 3. Create `.env` file with configs for Test Rail. You can use [this example](.env.example):\r   ```\r   TESTRAIL_USERNAME=your_testrail_username\r   TESTRAIL_PASSWORD=your_testrail_password\r   TESTRAIL_HOSTNAME=https://your_domain.testrail.io/\r   TESTRAIL_PROJECT_ID=your_testrail_project_id\r   ```\r 4. Create several Test Cases into your Test Rail and add their IDs into the [autotests](cypress/e2e) using this template:\r   ```js\r   it('C1, C2: Verify that google page has input field', () => {\r     cy.visit('https://www.google.com/');\r     cy.get('input').should('be.visible');\r   });\r   ```\r   where `C1` and `C2` are Test Case IDs. You can use another letter for Test Case IDs. Add `,` to separate several Test Case IDs. If you want to use only 1 Test Case ID, don't add a new `,`. Example:\r   ```js\r   it('C3: Verify that google page doesn\\'t have input field ', () => {\r     cy.visit('https://www.google.com/');\r     cy.get('input').should('not.be.visible');\r   });\r   ```\r 5. Run `npx cypress run` command\r 6. When Cypress Run is completed, open Test Runs in Test Rail. New Test Run with default name (e.g. `2023-01-03 Test Run: Cypress Autotest`) and results from Cypress Run should be created",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smoliarick/cypress-testrail-integration-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smoliarick/cypress-testrail-integration-example/issues"
+  },
+  "homepage": "https://github.com/Smoliarick/cypress-testrail-integration-example#readme"
 }

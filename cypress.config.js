@@ -20,9 +20,11 @@ module.exports = defineConfig({
           process.env.TESTRAIL_PASSWORD,
           process.env.TESTRAIL_HOSTNAME,
           process.env.TESTRAIL_PROJECT_ID,
-          // testRunName = 'New Test Run',
-          // parser = newParser
+           testRunName = 'Cypress Automation',
+           parser = newParser
         );
+        //await testrailIntegration.addResultsToTestRailTestRun(results, runId = 26);
+        //await testrailIntegration.addResultsToTestRailTestRun(results, projectId = 3);
         await testrailIntegration.addResultsToTestRailTestRun(results);
       });
       return config;
