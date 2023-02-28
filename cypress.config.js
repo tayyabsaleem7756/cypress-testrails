@@ -20,7 +20,7 @@ module.exports = defineConfig({
           process.env.TESTRAIL_PASSWORD,
           process.env.TESTRAIL_HOSTNAME,
           process.env.TESTRAIL_PROJECT_ID,
-           testRunName = 'Cypress Automation',
+          // testRunName = 'Cypress Automation',
            parser = newParser
         );
         //await testrailIntegration.addResultsToTestRailTestRun(results, runId = 26);
