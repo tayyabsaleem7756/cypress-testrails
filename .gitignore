@@ -1,5 +1,5 @@
 # Hide dependencies
-
+cypress/node_module
 
 # Hide videos and screenshots for Cypress
 cypress/videos
